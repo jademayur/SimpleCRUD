@@ -5,9 +5,9 @@ namespace SimpleCRUD.Models
     public class Category
     {
         [Key]
-        public int CaregoryId    { get; set; }
+        public int CategoryId { get; set; }
         [Required]
         [StringLength(50)]
-        public string CaregoryName { get; set; }
+        public string CategoryName { get; set; }
     }
 }

@@ -26,18 +26,18 @@ namespace SimpleCRUD.Migrations
 
             modelBuilder.Entity("SimpleCRUD.Models.Category", b =>
                 {
-                    b.Property<int>("CaregoryId")
+                    b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CaregoryId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CategoryId"));
 
                     b.Property<string>("CaregoryName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.HasKey("CaregoryId");
+                    b.HasKey("CategoryId");
 
                     b.ToTable("Categories");
                 });

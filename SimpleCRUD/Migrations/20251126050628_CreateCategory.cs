@@ -14,13 +14,13 @@ namespace SimpleCRUD.Migrations
                 name: "Categories",
                 columns: table => new
                 {
-                    CaregoryId = table.Column<int>(type: "int", nullable: false)
+                    CategoryId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     CaregoryName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Categories", x => x.CaregoryId);
+                    table.PrimaryKey("PK_Categories", x => x.CategoryId);
                 });
         }
 
